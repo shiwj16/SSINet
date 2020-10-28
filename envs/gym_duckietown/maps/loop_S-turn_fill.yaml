@@ -1,0 +1,309 @@
+# This is a closed loop (no intersections) with a few obstacles directly
+# on the road, which have to be avoided.
+
+tiles:
+- [grass  , grass       , grass       , grass     , grass        , grass     , grass     , grass        , grass     , grass     , grass       , grass ]
+- [grass  , curve_left/W, straight/W  , straight/W, straight/W   , straight/W, straight/W, straight/W   , straight/W, straight/W, curve_left/N, grass ]
+- [grass  , straight/S  , grass       , grass     , grass        , grass     , grass     , curve_right/N, straight/E, straight/E, curve_left/E, grass ]
+- [grass  , curve_left/S, straight/E  , straight/E, curve_right/E, grass     , grass     , straight/N   , grass     , grass     , grass       , grass ]
+- [grass  , grass       , grass       , grass     , straight/S   , grass     , grass     , straight/N   , grass     , grass     , grass       , grass ]
+- [grass  , grass       , curve_left/W, straight/W, curve_right/S, grass     , grass     , straight/N   , water     , water     , water       , grass ]
+- [grass  , grass       , straight/S  , grass     , grass        , grass     , grass     , straight/N   , water     , water     , water       , grass ]
+- [grass  , grass       , curve_left/S, straight/E, straight/E   , straight/E, straight/E, curve_left/E , water     , water     , water       , grass ]
+- [grass  , grass       , grass       , grass     , grass        , grass     , grass     , grass        , grass     , grass     , grass       , grass ]
+
+# NOTE: obstacles cannot be optional, because they will change for
+# every episode, and this will interfere with imitation learning
+objects:
+
+- kind: duckie
+  pos: [0.5, 0.4]
+  rotate: 10
+  height: 0.06
+
+- kind: duckie
+  pos: [0.5, 0.7]
+  rotate: 10
+  height: 0.06
+  
+- kind: duckie
+  pos: [1.5, 8.4]
+  rotate: 10
+  height: 0.06
+
+- kind: duckie
+  pos: [1.5, 8.7]
+  rotate: 10
+  height: 0.06
+  
+- kind: duckie
+  pos: [8.5, 8.4]
+  rotate: 10
+  height: 0.06
+
+- kind: duckie
+  pos: [8.5, 8.7]
+  rotate: 10
+  height: 0.06
+  
+- kind: duckie
+  pos: [10.5, 0.5]
+  rotate: 10
+  height: 0.06
+
+- kind: cone
+  pos: [5.5, 0.5]
+  rotate: 90
+  height: 0.08
+  
+- kind: cone
+  pos: [8.5, 7.5]
+  rotate: 90
+  height: 0.08
+  
+- kind: building
+  pos: [6.5, 2.5]
+  rotate: 0
+  height: 0.2
+  
+- kind: building
+  pos: [6.5, 3.5]
+  rotate: 0
+  height: 0.2
+  
+- kind: building
+  pos: [6.5, 5.5]
+  rotate: 0
+  height: 0.2
+  
+- kind: building
+  pos: [5.5, 3.5]
+  rotate: 0
+  height: 0.2
+  
+- kind: building
+  pos: [5.5, 4.5]
+  rotate: 0
+  height: 0.2
+  
+- kind: building
+  pos: [5.5, 5.5]
+  rotate: 0
+  height: 0.2
+  
+- kind: building
+  pos: [8.5, 4.5]
+  rotate: 0
+  height: 0.2
+  
+- kind: building
+  pos: [8.5, 5.5]
+  rotate: 0
+  height: 0.2
+  
+- kind: building
+  pos: [8.5, 6.5]
+  rotate: 0
+  height: 0.2
+  
+- kind: building
+  pos: [6.5, 8.5]
+  rotate: 0
+  height: 0.2
+  
+- kind: building
+  pos: [7.5, 8.5]
+  rotate: 0
+  height: 0.2
+  
+- kind: house
+  pos: [0.5, 1.5]
+  rotate: 0
+  height: 0.15
+  
+- kind: house
+  pos: [0.5, 2.5]
+  rotate: 0
+  height: 0.15
+  
+- kind: house
+  pos: [0.5, 3.5]
+  rotate: 0
+  height: 0.15
+  
+- kind: house
+  pos: [1.5, 5.5]
+  rotate: 0
+  height: 0.15
+  
+- kind: house
+  pos: [1.5, 6.5]
+  rotate: 0
+  height: 0.15
+  
+- kind: house
+  pos: [1.5, 7.5]
+  rotate: 0
+  height: 0.15
+  
+- kind: house
+  pos: [2.5, 0.5]
+  rotate: 0
+  height: 0.15
+  
+- kind: house
+  pos: [3.5, 0.5]
+  rotate: 0
+  height: 0.15
+  
+- kind: house
+  pos: [4.5, 0.5]
+  rotate: 0
+  height: 0.15
+  
+- kind: house
+  pos: [7.5, 0.5]
+  rotate: 0
+  height: 0.15
+  
+- kind: house
+  pos: [8.5, 0.5]
+  rotate: 0
+  height: 0.15
+  
+- kind: house
+  pos: [9.5, 0.5]
+  rotate: 0
+  height: 0.15
+  
+- kind: house
+  pos: [2.5, 8.5]
+  rotate: 0
+  height: 0.15
+  
+- kind: house
+  pos: [3.5, 8.5]
+  rotate: 0
+  height: 0.15
+  
+- kind: house
+  pos: [4.5, 8.5]
+  rotate: 0
+  height: 0.15
+  
+- kind: truck
+  pos: [1.5, 0.5]
+  rotate: 30
+  height: 0.08
+  
+- kind: bus
+  pos: [6.5, 0.5]
+  rotate: 135
+  height: 0.12
+  
+- kind: bus
+  pos: [5.5, 8.5]
+  rotate: 45
+  height: 0.12
+  
+- kind: truck
+  pos: [6.5, 4.5]
+  rotate: 60
+  height: 0.08
+  
+- kind: tree
+  pos: [0.5, 4.5]
+  rotate: 0
+  height: 0.1
+  
+- kind: tree
+  pos: [1.5, 4.5]
+  rotate: 0
+  height: 0.1
+  
+- kind: tree
+  pos: [2.5, 4.5]
+  rotate: 0
+  height: 0.1
+  
+- kind: tree
+  pos: [3.5, 4.5]
+  rotate: 0
+  height: 0.1
+  
+- kind: tree
+  pos: [2.5, 2.5]
+  rotate: 0
+  height: 0.1
+  
+- kind: tree
+  pos: [3.5, 2.5]
+  rotate: 0
+  height: 0.1
+  
+- kind: tree
+  pos: [4.5, 2.5]
+  rotate: 0
+  height: 0.1
+  
+- kind: tree
+  pos: [5.5, 2.5]
+  rotate: 0
+  height: 0.1
+  
+- kind: tree
+  pos: [3.5, 6.5]
+  rotate: 0
+  height: 0.1
+  
+- kind: tree
+  pos: [4.5, 6.5]
+  rotate: 0
+  height: 0.1
+  
+- kind: tree
+  pos: [5.5, 6.5]
+  rotate: 0
+  height: 0.1
+  
+- kind: tree
+  pos: [6.5, 6.5]
+  rotate: 0
+  height: 0.1
+  
+- kind: tree
+  pos: [8.5, 3.5]
+  rotate: 0
+  height: 0.1
+  
+- kind: tree
+  pos: [9.5, 3.5]
+  rotate: 0
+  height: 0.1
+  
+- kind: tree
+  pos: [10.5, 3.5]
+  rotate: 0
+  height: 0.1
+  
+- kind: tree
+  pos: [11.5, 3.5]
+  rotate: 0
+  height: 0.1
+  
+- kind: tree
+  pos: [11.5, 2.5]
+  rotate: 0
+  height: 0.1
+  
+- kind: tree
+  pos: [11.5, 1.5]
+  rotate: 0
+  height: 0.1
+  
+- kind: tree
+  pos: [11.5, 0.5]
+  rotate: 0
+  height: 0.1
+
+tile_size: 0.585

@@ -1,0 +1,230 @@
+# This map is a closed loop: it has multiple left and right turns but no
+# intersections. The map also includes many white distractor objects trying
+# to confuse the detection of road edges. The purpose of this map is to act
+# as a torture-test for lane-following.
+
+tiles:
+- [grass, grass       , grass        , grass        , grass        , grass     , grass        , grass       , grass]
+- [grass, curve_left/W, curve_left/N , floor        , curve_left/W , straight/W, straight/W   , curve_left/N, grass]
+- [grass, straight/S  , curve_right/W, straight/W   , curve_right/S, grass     , curve_right/N, curve_left/E, grass]
+- [grass, straight/S  , grass        , grass        , grass        , grass     , straight/N   , grass       , grass]
+- [grass, straight/S  , grass        , grass        , curve_right/N, straight/E, curve_left/E , grass       , grass]
+- [grass, straight/S  , grass        , curve_right/N, curve_left/E , grass     , grass        , grass       , grass]
+- [grass, straight/S  , grass        , straight/N   , water        , water     , water        , water       , grass]
+- [grass, curve_left/S, straight/E   , curve_left/E , water        , water     , water        , water       , grass]
+- [grass, grass       , grass        , grass        , water        , water     , water        , water       , grass]
+
+objects:
+
+- kind: duckie
+  pos: [0.5,0.4]
+  rotate: 10
+  height: 0.06
+
+- kind: duckie
+  pos: [0.5,0.7]
+  rotate: 10
+  height: 0.06
+  
+- kind: duckie
+  pos: [0.5,8.3]
+  rotate: 10
+  height: 0.06
+
+- kind: duckie
+  pos: [0.5,8.7]
+  rotate: 10
+  height: 0.06
+  
+- kind: duckie
+  pos: [8.5,0.3]
+  rotate: 10
+  height: 0.06
+
+- kind: duckie
+  pos: [8.5,0.7]
+  rotate: 10
+  height: 0.06
+  
+- kind: building
+  pos: [7.5, 4.5]
+  rotate: 0
+  height: 0.2
+  
+- kind: building
+  pos: [7.5, 3.5]
+  rotate: 0
+  height: 0.2
+  
+- kind: building
+  pos: [8.5, 3.5]
+  rotate: 0
+  height: 0.2
+  
+- kind: house
+  pos: [0.5, 3.5]
+  rotate: 0
+  height: 0.15
+  
+- kind: house
+  pos: [0.5, 4.5]
+  rotate: 0
+  height: 0.15
+  
+- kind: house
+  pos: [0.5, 5.5]
+  rotate: 0
+  height: 0.15
+  
+- kind: house
+  pos: [0.5, 6.5]
+  rotate: 0
+  height: 0.15
+  
+- kind: house
+  pos: [2.5, 5.5]
+  rotate: 0
+  height: 0.15
+  
+- kind: house
+  pos: [2.5, 6.5]
+  rotate: 0
+  height: 0.15
+  
+- kind: house
+  pos: [3.5, 0.5]
+  rotate: 0
+  height: 0.15
+  
+- kind: house
+  pos: [4.5, 0.5]
+  rotate: 0
+  height: 0.15
+  
+- kind: house
+  pos: [5.5, 0.5]
+  rotate: 0
+  height: 0.15
+  
+- kind: bus
+  pos: [1.5, 0.5]
+  rotate: 0
+  height: 0.12
+
+- kind: truck
+  pos: [2.5, 0.5]
+  rotate: 0
+  height: 0.08
+  
+- kind: bus
+  pos: [2.5, 4.5]
+  rotate: 0
+  height: 0.12
+
+- kind: truck
+  pos: [2.5, 3.5]
+  rotate: 60
+  height: 0.08
+  
+- kind: truck
+  pos: [8.5, 2.5]
+  rotate: 60
+  height: 0.08
+  
+- kind: cone
+  pos: [8.5, 1.5]
+  rotate: 90
+  height: 0.08
+  
+- kind: cone
+  pos: [0.5, 7.5]
+  rotate: 90
+  height: 0.08
+
+- kind: tree
+  pos: [1.5, 8.5]
+  rotate: 0
+  height: 0.1
+
+- kind: tree
+  pos: [2.5, 8.5]
+  rotate: 0
+  height: 0.1
+
+- kind: tree
+  pos: [3.5, 8.5]
+  rotate: 0
+  height: 0.1
+  
+- kind: tree
+  pos: [5.5, 5.5]
+  rotate: 0
+  height: 0.1
+
+- kind: tree
+  pos: [6.5, 5.5]
+  rotate: 0
+  height: 0.1
+
+- kind: tree
+  pos: [7.5, 5.5]
+  rotate: 0
+  height: 0.1
+  
+- kind: tree
+  pos: [5.5, 2.5]
+  rotate: 0
+  height: 0.1
+  
+- kind: tree
+  pos: [5.5, 3.5]
+  rotate: 0
+  height: 0.1
+  
+- kind: tree
+  pos: [4.5, 3.5]
+  rotate: 0
+  height: 0.1
+  
+- kind: duckie
+  pos: [3.5, 1.33]
+  rotate: 0
+  height: 0.08
+  
+- kind: duckie
+  pos: [3.5, 1.66]
+  rotate: 0
+  height: 0.08
+  
+- kind: building
+  pos: [2.5, 3.5]
+  rotate: 0
+  height: 0.2
+  
+- kind: building
+  pos: [3.5, 3.5]
+  rotate: 0
+  height: 0.2
+
+- kind: building
+  pos: [2.5, 4.5]
+  rotate: 0
+  height: 0.2
+
+- kind: building
+  pos: [3.5, 4.5]
+  rotate: 0
+  height: 0.2
+  
+- kind: bus
+  pos: [7.5, 0.5]
+  rotate: 180
+  height: 0.12
+
+- kind: truck
+  pos: [0.5, 2.5]
+  rotate: 30
+  height: 0.08
+  
+tile_size: 0.585
+
