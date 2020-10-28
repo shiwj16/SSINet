@@ -43,7 +43,7 @@ cd gym-duckietown
 pip3 install -e .
 ```
 
-After installation, we suggest to replace the original file `<installation_path>/gym_duckietown/simulator.py` with [our revised simulator file](https://github.com/shiwj16/SSINet/envs/gym_duckietown/simulator.py) to avoid NaNs and simulation logs. Please note that if you want to reproduce our results on different maps, you should add [our customized map files](https://github.com/shiwj16/SSINet/envs/gym_duckietown/maps) to the folder `<installation_path>/gym_duckietown/maps`.
+After installation, we suggest to replace the original file `<installation_path>/gym_duckietown/simulator.py` with [our revised simulator file](https://github.com/shiwj16/SSINet/tree/main/envs/gym_duckietown/simulator.py) to avoid NaNs and simulation logs. Please note that if you want to reproduce our results on different maps, you should add [our customized map files](https://github.com/shiwj16/SSINet/tree/main/envs/gym_duckietown/maps) to the folder `<installation_path>/gym_duckietown/maps`.
 
 ### Examples
 
