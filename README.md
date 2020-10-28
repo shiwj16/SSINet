@@ -143,7 +143,7 @@ Our training procedure includes two stages. While the first stage aims to pretra
       --model_dir "<path to the trained models>"
     ```
 
-This repository includes a pretrained model and a trained mask model in the [trained_models](https://github.com/shiwj16/SSINet/trained_models) directory. These models use an U-Net actor architecture with `net_layers = 4`, and the pretrained model is trained using PPO algorithm. You can use them directly to reproduce our main experimental results or for further exploration.
+This repository includes a pretrained model and a trained mask model in the [trained_models](https://github.com/shiwj16/SSINet/tree/main/trained_models) directory. These models use an U-Net actor architecture with `net_layers = 4`, and the pretrained model is trained using PPO algorithm. You can use them directly to reproduce our main experimental results or for further exploration.
 
 
 ## Resutls
