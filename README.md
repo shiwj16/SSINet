@@ -8,7 +8,7 @@ If you use this codebase for your research, please cite the paper:
 @article{shi2020self,
   title={Self-Supervised Discovering of Interpretable Features for Reinforcement Learning},
   author={Shi, Wenjie and Huang, Gao and Song, Shiji and Wang, Zhuoyuan and Lin Tingyu and Wu, Cheng},
-  journal={arXiv preprint arXiv:2003.07069},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
   year={2020}
 }
 ```
